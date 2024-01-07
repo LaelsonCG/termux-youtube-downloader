@@ -1,3 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/python
+
 import sys
 import subprocess
 import os
@@ -10,8 +12,8 @@ def download_video(url):
     if not os.path.exists(destino):
         os.makedirs(destino)
 
-    # Comando para chamar o SpotDL e baixar o vídeo
-    comando = f"spotdl {url} --output {destino}"
+    # Comando para chamar o yt-dlp e baixar o vídeo em formato MP4
+    comando = f"yt-dlp {url} -o '{destino}/%(title)s.%(ext)s' -f mp4"
 
     try:
         # Executa o comando
@@ -23,7 +25,7 @@ def download_video(url):
 if __name__ == "__main__":
     # Verifica se o URL do vídeo foi fornecido como argumento
     if len(sys.argv) != 2:
-        print("Uso: python yt-mp4.py <URL do vídeo>")
+        print("Uso: ./yt-mp4.py <URL do vídeo>")
         sys.exit(1)
 
     # Obtém o URL do vídeo a partir dos argumentos de linha de comando
