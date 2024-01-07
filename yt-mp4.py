@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/python
 
+print("INICIANDO O YT-MP4 DOWNLOADER")
 import sys
 import subprocess
 import os
@@ -18,7 +19,8 @@ def download_video(url):
     try:
         # Executa o comando
         subprocess.run(comando, shell=True, check=True)
-        print("Download concluído com sucesso!")
+        print("\nDownload concluído com sucesso!")
+        print("CRÉDITOS PELO SCRIPT - @Laael")
     except subprocess.CalledProcessError as e:
         print(f"Erro durante o download: {e}")
 
