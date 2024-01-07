@@ -5,4 +5,4 @@ Este é um simples script para baixar vídeos do YouTube usando o Termux.
 ## Instalação
 
 ```bash
-python <(wget -qO- https://raw.githubusercontent.com/LaelsonCG/termux-youtube-downloader/main/install.py)
+bash <(wget -qO- https://raw.githubusercontent.com/LaelsonCG/termux-youtube-downloader/main/install.py)
