@@ -14,5 +14,8 @@ pip install yt-dlp
 # Baixa script de download
 wget https://raw.githubusercontent.com/LaelsonCG/termux-youtube-downloader/main/yt-mp4.py
 
+# Adiciona permissões de execução
+chmod +x yt-mp4.py
+
 echo "Instalação concluída com sucesso!"
-echo "Agora você pode usar o yt-dlp com: yt-mp4.py -o <URL_do_vídeo>"
+echo "Agora você pode baixar vídeos com: ./yt-mp4.py -o <URL_do_vídeo>"
