@@ -20,7 +20,7 @@ def download_video(url):
         # Executa o comando
         subprocess.run(comando, shell=True, check=True)
         print("\nDownload concluído com sucesso!")
-        print("CRÉDITOS PELO SCRIPT - @Laael")
+        print("CRÉDITOS PELO SCRIPT - @LaelsonCG")
     except subprocess.CalledProcessError as e:
         print(f"Erro durante o download: {e}")
 
