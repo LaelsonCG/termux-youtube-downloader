@@ -6,7 +6,7 @@ echo "Iniciando instalação..."
 pkg update -y
 
 # Instala o Python e o pip
-pkg install python python3-pip -y
+pkg install python3 -y
 
 # Instala o yt-dlp
 pip install yt-dlp
